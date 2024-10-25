@@ -1,0 +1,80 @@
+/* Variables de color y estilo */
+:root {
+    --sidebar-bg: #2c3e50;
+    --sidebar-hover: #34495e;
+    --sidebar-text-color: #ecf0f1;
+    --sidebar-accent-color: #3498db;
+    --sidebar-width: 250px;
+    --sidebar-transition: 0.3s ease;
+  }
+  
+  /* Estilos para la Sidebar */
+  .sidebar-admin {
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--sidebar-bg);
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    transition: transform var(--sidebar-transition);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-header {
+    padding: 20px;
+    background-color: var(--sidebar-accent-color);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .sidebar-admin nav {
+    flex-grow: 1;
+    padding-top: 20px;
+  }
+  
+  .sidebar-admin ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-admin li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-link {
+    display: block;
+    padding: 15px 20px;
+    color: var(--sidebar-text-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color var(--sidebar-transition), padding-left var(--sidebar-transition);
+  }
+  
+  .sidebar-link:hover {
+    background-color: var(--sidebar-hover);
+    padding-left: 30px;
+    color: white;
+  }
+  
+  /* Efecto al hacer focus */
+  .sidebar-link:focus {
+    outline: 2px solid var(--sidebar-accent-color);
+    outline-offset: 2px;
+  }
+  
+  /* Para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .sidebar-admin {
+      transform: translateX(-100%);
+    }
+  
+    .sidebar-admin.active {
+      transform: translateX(0);
+    }
+  }
+  

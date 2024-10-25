@@ -1,0 +1,108 @@
+/* Estilos generales del contenedor */
+.phone-crud-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos del formulario */
+  .phone-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .phone-form label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+  }
+  
+  .phone-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .phone-form input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  
+  .form-buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .form-buttons button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-buttons button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Estilos para la tabla */
+  .phone-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .phone-table th, .phone-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .phone-table th {
+    background-color: #f1f5f9;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .phone-table td {
+    background-color: #fff;
+  }
+  
+  .phone-table td button {
+    background-color: #d47b7b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .phone-table td button:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .phone-form {
+      grid-template-columns: 1fr;
+    }
+  }
+  

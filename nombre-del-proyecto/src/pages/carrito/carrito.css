@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --carrito-primary-color: #000000;
+  --carrito-secondary-color: #10b981;
+  --carrito-background-color: #f3f4f6;
+  --carrito-text-color: #1f2937;
+  --carrito-light-gray: #e5e7eb;
+  --carrito-dark-gray: #4b5563;
+  --carrito-white: #ffffff;
+  --carrito-black: #000000;
+  --carrito-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --carrito-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --carrito-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --carrito-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--carrito-background-color);
+  color: var(--carrito-text-color);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--carrito-white);
+  box-shadow: var(--carrito-shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--carrito-primary-color);
+  text-decoration: none;
+}
+
+.navbar .nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar .nav ul li a {
+  text-decoration: none;
+  color: var(--carrito-text-color);
+  font-weight: 500;
+  transition: var(--carrito-transition);
+}
+
+.navbar .nav ul li a:hover {
+  color: var(--carrito-primary-color);
+}
+
+.icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--carrito-dark-gray);
+  cursor: pointer;
+  transition: var(--carrito-transition);
+}
+
+.icon-btn:hover {
+  color: var(--carrito-primary-color);
+}
+
+/* Product Container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.product-image-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-product-image {
+  width: 300px; /* Tamaño reducido de la imagen */
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: var(--carrito-shadow-md);
+}
+
+.product-details-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-details-section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--carrito-primary-color);
+  margin: 1rem 0;
+}
+
+.discount-percentage {
+  background-color: var(--carrito-secondary-color);
+  color: var(--carrito-white);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.product-options {
+  margin-top: 1.5rem;
+}
+
+.option {
+  margin-bottom: 1.5rem;
+}
+
+.option h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.color-selector {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.color-option {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--carrito-transition);
+  border: 2px solid var(--carrito-light-gray);
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.quantity-btn {
+  background-color: var(--carrito-light-gray);
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--carrito-transition);
+}
+
+.quantity-btn:hover {
+  background-color: var(--carrito-primary-color);
+  color: var(--carrito-white);
+}
+
+.quantity-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.buy-now-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--carrito-primary-color);
+  color: var(--carrito-white);
+  cursor: pointer;
+  transition: var(--carrito-transition);
+}
+
+.buy-now-btn:hover {
+  background-color: var(--carrito-primary-color);
+  filter: brightness(110%);
+}
+
+.checkout-info {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--carrito-white);
+  border-radius: 0.5rem;
+  box-shadow: var(--carrito-shadow-sm);
+  font-size: 0.875rem;
+  color: var(--carrito-dark-gray);
+}

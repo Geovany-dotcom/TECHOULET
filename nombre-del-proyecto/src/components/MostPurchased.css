@@ -1,0 +1,31 @@
+.most-purchased-container {
+    padding: 20px;
+  }
+  
+  .most-purchased-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .most-purchased-table th, .most-purchased-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .most-purchased-table th {
+    background-color: #f1f5f9;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .most-purchased-table td img {
+    width: 70px;
+    height: auto;
+  }
+  
+  .most-purchased-table tr:hover {
+    background-color: #f0f0f0;
+  }
+  

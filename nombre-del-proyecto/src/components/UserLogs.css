@@ -1,0 +1,48 @@
+/* Contenedor principal */
+.logs-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Encabezado */
+  .logs-container h2 {
+    font-size: 28px;
+    color: #3b82f6;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Tabla */
+  .logs-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .logs-table th, .logs-table td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .logs-table th {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .logs-table td {
+    background-color: #f1f5f9;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .logs-table tr:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+  }
+  
+  .logs-table td {
+    color: #333;
+  }
+  
